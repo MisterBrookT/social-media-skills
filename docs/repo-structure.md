@@ -11,10 +11,9 @@
 
 ```text
 skills/
-  social-media/
-  social-media-xiaohongshu/
-  social-media-douyin/
-  social-media-wechat/
+  xiaohongshu/
+  douyin/
+  wechat/
 
 cases/
   xiaohongshu-launch/
@@ -26,13 +25,16 @@ docs/
   xiaohongshu-launch-plan.md
   kaji-launch-plan.md
   dogfooding-workflow.md
+  references/
 ```
 
 ## 规则
 
 - 参考 `superpowers`：顶层 skill 平铺；同一个 skill 的 `agents/`、`scripts/`、`references/` 放进该 skill 目录。
 - `skills/`：只放 agent 运行时要读的技能和必要 reference。
-- 平台是顶层 skill；同平台子能力放该平台目录里的 `references/`。
+- 平台是顶层 skill，目录名直接用平台名，不统一加仓库前缀。
+- 不设总入口 skill；跨平台路线放 README/docs，避免 `skills/` 出现抽象目录。
+- 同平台子能力放该平台目录里的 `references/`。
 - `cases/`：只放成品或半成品资产，方便作为证明材料。
 - `docs/`：放路线、策略、设计决策、复盘。
 - 不把“为什么这么做”的长说明塞进 case 资产目录。

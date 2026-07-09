@@ -1,5 +1,5 @@
 ---
-name: social-media-douyin
+name: douyin
 description: "Use when creating Douyin/抖音 hooks, spoken scripts, short-video outlines, cover titles, scene beats, or adapting source material into Douyin-native content."
 ---
 
@@ -43,4 +43,3 @@ description: "Use when creating Douyin/抖音 hooks, spoken scripts, short-video
 
 ## 话题
 ```
-

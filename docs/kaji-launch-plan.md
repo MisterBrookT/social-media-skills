@@ -54,9 +54,31 @@ Kaji 适合作为第二个 case。
 - macOS 工具封面可以用伪菜单栏和状态面板表达产品形态。
 - 同一产品至少保留痛点型和结果型两版，方便测试不同入口。
 
+## 第二轮迭代
+
+第一轮问题：
+
+- `AI Coding 别失控` 太泛，像产品海报，不像信息流痛点。
+- 文案太早进入功能列表，读者还没感到“为什么需要它”。
+- 封面 B 讲了菜单栏结果，但点击理由不够具体。
+
+第二轮改法：
+
+- 主承诺改成 `别等额度跳出来`，对应真实中断点。
+- 副标题压成 `用量 / token / 休息`，只保留最强三个状态。
+- 正文前三段先写长任务被打断，再引出 Kaji。
+- 封面主体保留菜单栏和状态面板，证明这是 macOS 工具，不是抽象 AI 工具。
+
+产物：
+
+- 文案：`cases/kaji-launch/copy/xiaohongshu-copy.md` 的版本 C。
+- 封面：`cases/kaji-launch/cover/cover-c-interrupt.svg`。
+- 导出：`cases/kaji-launch/cover/cover-c-interrupt.png`。
+
 ## 导出命令
 
 ```bash
 rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-a-control.svg -o cases/kaji-launch/cover/cover-a-control.png
 rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-b-menubar.svg -o cases/kaji-launch/cover/cover-b-menubar.png
+rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-c-interrupt.svg -o cases/kaji-launch/cover/cover-c-interrupt.png
 ```

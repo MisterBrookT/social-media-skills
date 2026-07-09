@@ -1,11 +1,11 @@
 ---
-name: social-media-xiaohongshu
+name: xiaohongshu
 description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cover big text, tags, carousel outlines, posting copy, or adapting source material into RedNote-native content."
 ---
 
 # 小红书
 
-小红书平台内容 skill。覆盖正文、标题、封面、图文页纲；cover 是平台内子能力，不是同层 skill。
+小红书平台内容 skill。覆盖正文、标题、封面、图文页纲；cover 是平台内子能力。
 
 ## 核心原则
 
@@ -14,6 +14,26 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 标签服务发现，不堆无关热词。
 - 不写无法证明的“全网最强”“爆款必备”。
 - 做开源工具/产品封面前，先读 `references/cover.md`；需要种子先例时再读 `references/cover-seed-research.md`。
+
+## 输入 contract
+
+先把素材压成 6 项，再动笔：
+
+```markdown
+## 产品/主题
+
+## 目标读者
+
+## 真实痛点
+
+## 一句话结果
+
+## 可证明亮点
+
+## 可用素材
+```
+
+缺 `真实痛点` 或 `可证明亮点` 时，不要补幻想。先标 `待补素材`，或问用户要 case/截图/使用场景。
 
 ## 内容单元
 
@@ -53,9 +73,32 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 工具类封面优先：白/浅灰底、炭黑大字、一个强调色、产品形态图。
 - 不用纯代码截图，不堆 emoji，不写未证实数字。
 
+## 开源工具写法
+
+开源工具不要从功能列表开场。先写“使用中断点”：
+
+- 什么时候会卡住？
+- 用户原来怎么凑合？
+- 工具把哪个状态收束到哪里？
+- 为什么这个形态更低打扰？
+
+功能列表最多 5 条，放在痛点和结果之后。安装命令只在读者已经理解价值后出现。
+
+## 质量评分
+
+发出前按 5 项打分，每项 0-2 分，低于 8 分重写：
+
+- 封面承诺：1 秒内知道为什么点。
+- 正文开头：前三段不是 README 摘要。
+- 真实场景：能看到具体用户和具体时刻。
+- 信息克制：没有功能堆砌、假数据、空泛形容。
+- 图文联动：封面、标题、正文、页纲说的是同一个承诺。
+
 ## 输出
 
 ```markdown
+## 输入压缩
+
 ## 标题
 
 ## 封面大字
@@ -67,4 +110,6 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 ## 图文页纲
 
 ## 评论钩子
+
+## 发布前检查
 ```

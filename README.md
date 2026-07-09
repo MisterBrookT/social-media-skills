@@ -4,10 +4,11 @@
 
 ## 当前技能
 
-- `social-media`：中文社媒总入口，多平台内容包与路由。
-- `social-media-xiaohongshu`：小红书笔记、标题、封面、标签、图文卡片。
-- `social-media-douyin`：抖音口播、前 3 秒钩子、封面标题。
-- `social-media-wechat`：公众号长文、摘要、封面文案。
+- `xiaohongshu`：小红书笔记、标题、封面、标签、图文卡片。
+- `douyin`：抖音口播、前 3 秒钩子、封面标题。
+- `wechat`：公众号长文、摘要、封面文案。
+
+没有 `social-media` 总入口 skill。仓库名已经说明这是社媒技能库；`skills/` 里只放真正可触发的平台技能。跨平台路线写在 README 和 `docs/`。
 
 ## 安装
 
@@ -26,21 +27,20 @@
 ```text
 .codex-plugin/plugin.json
 skills/
-  social-media/
-    SKILL.md
-    references/
-  social-media-xiaohongshu/
+  xiaohongshu/
     SKILL.md
     references/
       cover.md
       cover-seed-research.md
-  social-media-douyin/
+  douyin/
     SKILL.md
-  social-media-wechat/
+  wechat/
     SKILL.md
+docs/
+  references/
 ```
 
-`skills/` 平铺多个可组合技能；`social-media` 只做总入口和跨平台编排。
+`skills/` 平铺多个平台技能；同平台子能力放平台目录里的 `references/`。通用调研、路线、prior art 放 `docs/`。
 
 ## 设计原则
 
@@ -49,9 +49,9 @@ skills/
 - 图文一体：封面、标题、正文、标签、评论钩子一起设计。
 - 发布分离：本仓库首版不做自动发布，后续可接发布技能。
 
-## Prior Art
+## 先例调研
 
-详见 `skills/social-media/references/prior-art.md`。核心参考：
+详见 `docs/references/prior-art.md`。核心参考：
 
 - `nashsu/Viral_Writer_Skill`
 - `op7418/guizang-social-card-skill`
@@ -69,7 +69,7 @@ skills/
 - 开源工具适合用“痛点 + 结果 + 工具名”的封面结构。
 - 封面会倒逼一句话定位，比先写长文更清楚。
 
-Case 见 `skills/social-media-xiaohongshu/SKILL.md` 和 `skills/social-media-xiaohongshu/references/cover.md`。
+Case 见 `skills/xiaohongshu/SKILL.md` 和 `skills/xiaohongshu/references/cover.md`。
 
 ## 案例
 

@@ -27,7 +27,7 @@
 - Stars: 200
 - 定位：素材收集、文章、排版、封面、多平台转换、发布一体化。
 - 可借：素材池、manifest、多平台管线、诚实标注原则。
-- 不足：范围过重；首版 social-media skill 不宜直接包含发布自动化。
+- 不足：范围过重；首版平台 skill 不宜直接包含发布自动化。
 
 ### OrangeViolin/wechat-to-xiaohongshu
 
@@ -81,13 +81,13 @@
 
 ## 结论
 
-`social-media` 应做总入口，不叫 `writing`：
+本仓库应做技能库，不叫 `writing`：
 
 - 内容策略：借 `Viral_Writer_Skill`。
 - 视觉/封面：借 `guizang-social-card-skill` 与 `xhs-cover-skill`。
 - 管线：借 `content-pipeline`。
 - 公众号证据池：借 `yuan-skills`。
 - 个人风格与审校：借 `auto-claude-writing-agent-pub`。
-- 仓库结构：借 `superpowers`，`skills/` 下平铺多个可组合 skill，`social-media` 只做总入口。
+- 仓库结构：借 `superpowers`，`skills/` 下平铺多个可组合平台 skill；跨平台说明放 README/docs。
 
 首版边界：生成内容资产，不自动发布。
