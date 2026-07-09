@@ -5,7 +5,7 @@
 1. 可安装技能：`skills/`
 2. 证明技能有用的案例资产：`cases/`
 
-过程、路线、取舍、研究沉淀放 `docs/`。
+仓库结构、开发流程、参考资料放 `docs/`。案例路线、取舍、复盘放 Obsidian 项目笔记。
 
 ## 目录边界
 
@@ -22,8 +22,6 @@ cases/
 
 docs/
   repo-structure.md
-  xiaohongshu-launch-plan.md
-  kaji-launch-plan.md
   dogfooding-workflow.md
   references/
 ```
@@ -36,7 +34,8 @@ docs/
 - 不设总入口 skill；跨平台路线放 README/docs，避免 `skills/` 出现抽象目录。
 - 同平台子能力放该平台目录里的 `references/`。
 - `cases/`：只放成品或半成品资产，方便作为证明材料。
-- `docs/`：放路线、策略、设计决策、复盘。
+- `docs/`：放仓库结构、开发流程、参考资料；不放单独 case 复盘。
+- 案例路线、判断、复盘沉到 Obsidian `02 Projects/social-media-skills/`。
 - 不把“为什么这么做”的长说明塞进 case 资产目录。
 
 ## 当前案例
@@ -44,11 +43,11 @@ docs/
 `cases/xiaohongshu-launch/` 是第一个证明案例：
 
 - `copy/xiaohongshu-copy.md`：两版小红书文案。
-- `cover/*.svg`：两张封面源文件。
-- `cover/*.png`：两张封面导出图。
+- `cover/*.svg`：封面源文件。
+- `cover/*.png`：封面导出图。
 
 `cases/kaji-launch/` 是第二个证明案例：
 
 - `copy/xiaohongshu-copy.md`：两版小红书文案。
-- `cover/*.svg`：两张封面源文件。
-- `cover/*.png`：两张封面导出图。
+- `cover/*.svg`：封面源文件。
+- `cover/*.png`：封面导出图。

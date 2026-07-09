@@ -61,7 +61,7 @@ docs/
 - `MapleShaw/auto-claude-writing-agent-pub`
 - `Vivixiao980/xhs-cover-skill`
 
-## 首个 Case
+## 首个案例
 
 先做小红书封面。原因：
 
@@ -69,9 +69,21 @@ docs/
 - 开源工具适合用“痛点 + 结果 + 工具名”的封面结构。
 - 封面会倒逼一句话定位，比先写长文更清楚。
 
-Case 见 `skills/xiaohongshu/SKILL.md` 和 `skills/xiaohongshu/references/cover.md`。
+案例见 `skills/xiaohongshu/SKILL.md` 和 `skills/xiaohongshu/references/cover.md`。
 
-## 案例
+## 案例展示
+
+这里放用本仓库技能产出的代表案例。后续不同平台、不同内容类型继续追加。
+
+### Kaji 小红书产品封面
+
+产品类封面。重点验证：品牌名可见、真实截图作证、主标题是产品定位、底部卖点短且平行。
+
+<img src="cases/kaji-launch/cover/cover-d-clean-product.png" alt="Kaji 小红书产品封面" width="360">
+
+- 文案：[cases/kaji-launch/copy/xiaohongshu-copy.md](cases/kaji-launch/copy/xiaohongshu-copy.md)
+- 封面源文件：[cases/kaji-launch/cover/cover-d-clean-product.svg](cases/kaji-launch/cover/cover-d-clean-product.svg)
+- 封面规则：[skills/xiaohongshu/references/cover.md](skills/xiaohongshu/references/cover.md)
 
 - `cases/xiaohongshu-launch/`：`social-media-skills` 小红书发布案例，只放文案和封面资产。
 - `cases/kaji-launch/`：Kaji 小红书发布案例，用来验证 skill 可迁移到真实产品。
@@ -79,6 +91,7 @@ Case 见 `skills/xiaohongshu/SKILL.md` 和 `skills/xiaohongshu/references/cover.
 ## 文档
 
 - `docs/repo-structure.md`：仓库边界，说明 `skills/`、`cases/`、`docs/` 怎么分工。
-- `docs/xiaohongshu-launch-plan.md`：小红书发布路线，说明文案和封面为什么分开。
-- `docs/kaji-launch-plan.md`：Kaji 小红书发布路线，验证真实产品 case。
 - `docs/dogfooding-workflow.md`：本机安装、使用、修 skill、再验证的自举流程。
+- `docs/references/`：先例调研、平台规格、内容和视觉参考。
+
+案例路线、判断、复盘不放 repo docs，沉淀到 Obsidian `02 Projects/social-media-skills/`。
