@@ -13,7 +13,7 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 像真实使用后分享，不像产品发布稿。
 - 标签服务发现，不堆无关热词。
 - 不写无法证明的“全网最强”“爆款必备”。
-- 做开源工具/产品封面前，先读 `references/cover.md`；需要种子先例时再读 `references/cover-seed-research.md`。
+- 做开源工具/产品封面前，先读 `references/cover.md`。
 - 做产品封面时，优先使用真实截图。没有截图，先向用户要，不要用伪面板替代。
 
 ## 输入 contract
