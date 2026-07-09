@@ -14,6 +14,7 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 标签服务发现，不堆无关热词。
 - 不写无法证明的“全网最强”“爆款必备”。
 - 做开源工具/产品封面前，先读 `references/cover.md`；需要种子先例时再读 `references/cover-seed-research.md`。
+- 做产品封面时，优先使用真实截图。没有截图，先向用户要，不要用伪面板替代。
 
 ## 输入 contract
 
@@ -72,6 +73,7 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 最多三层信息：主标题、副标题、角标。
 - 工具类封面优先：白/浅灰底、炭黑大字、一个强调色、产品形态图。
 - 不用纯代码截图，不堆 emoji，不写未证实数字。
+- 产品封面优先：大字承诺 + 真实截图 + 1-3 个短卖点。
 
 ## 开源工具写法
 

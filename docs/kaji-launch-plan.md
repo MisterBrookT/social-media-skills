@@ -69,11 +69,20 @@ Kaji 适合作为第二个 case。
 - 正文前三段先写长任务被打断，再引出 Kaji。
 - 封面主体保留菜单栏和状态面板，证明这是 macOS 工具，不是抽象 AI 工具。
 
+第三轮方向：
+
+- 产品类封面单独处理：必须使用真实产品截图。
+- 参考样式只学习结构：简洁、视觉重心突出、干净、真实截图明确。
+- 不学习大红字；颜色按产品气质走。
+- Kaji 不再只画伪状态面板，改用现有产品截图做主体证据。
+
 产物：
 
 - 文案：`cases/kaji-launch/copy/xiaohongshu-copy.md` 的版本 C。
 - 封面：`cases/kaji-launch/cover/cover-c-interrupt.svg`。
 - 导出：`cases/kaji-launch/cover/cover-c-interrupt.png`。
+- 产品截图版：`cases/kaji-launch/cover/cover-d-clean-product.svg`。
+- 产品截图版导出：`cases/kaji-launch/cover/cover-d-clean-product.png`。
 
 ## 导出命令
 
@@ -81,4 +90,5 @@ Kaji 适合作为第二个 case。
 rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-a-control.svg -o cases/kaji-launch/cover/cover-a-control.png
 rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-b-menubar.svg -o cases/kaji-launch/cover/cover-b-menubar.png
 rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-c-interrupt.svg -o cases/kaji-launch/cover/cover-c-interrupt.png
+rsvg-convert -w 1080 -h 1440 cases/kaji-launch/cover/cover-d-clean-product.svg -o cases/kaji-launch/cover/cover-d-clean-product.png
 ```
