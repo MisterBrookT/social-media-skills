@@ -71,4 +71,9 @@ Case 见 `skills/social-media-xiaohongshu-cover/SKILL.md`。
 
 ## 案例
 
-- `cases/xiaohongshu-launch/`：`social-media-skills` 小红书发布案例，分 `copy/` 和 `cover/` 两条分支。
+- `cases/xiaohongshu-launch/`：`social-media-skills` 小红书发布案例，只放文案和封面资产。
+
+## 文档
+
+- `docs/repo-structure.md`：仓库边界，说明 `skills/`、`cases/`、`docs/` 怎么分工。
+- `docs/xiaohongshu-launch-plan.md`：小红书发布路线，说明文案和封面为什么分开。
