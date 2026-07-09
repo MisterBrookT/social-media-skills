@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <style>
+      .bg { fill: #f7f4ef; }
+      .ink { fill: #1f1f1f; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
+      .muted { fill: #706861; font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
+      .mono { fill: #7a716b; font-family: "SF Mono", "Menlo", "Consolas", monospace; }
+      .title { font-size: 126px; font-weight: 900; letter-spacing: -4px; }
+      .big { font-size: 104px; font-weight: 900; letter-spacing: -3px; }
+      .subtitle { font-size: 45px; font-weight: 800; }
+      .small { font-size: 27px; font-weight: 650; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#211b16" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" width="1080" height="1440"/>
+  <rect x="56" y="56" width="968" height="1328" rx="46" fill="#fffaf3" stroke="#25211d" stroke-width="3"/>
+
+  <text class="mono" x="88" y="126" font-size="23" font-weight="750">小红书封面</text>
+  <rect x="824" y="84" width="148" height="58" rx="29" fill="#e83f4f"/>
+  <text x="898" y="124" text-anchor="middle" fill="#fffaf3" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="850">痛点型</text>
+
+  <text class="ink title" x="86" y="300">别只</text>
+  <text class="ink title" x="86" y="456">写正文</text>
+
+  <g opacity="0.54">
+    <rect x="88" y="552" width="388" height="640" rx="34" fill="#f0ebe4" stroke="#cfc6bd" stroke-width="3"/>
+    <text x="124" y="622" fill="#928981" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="45" font-weight="900">正文</text>
+    <rect x="124" y="678" width="286" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="724" width="312" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="770" width="236" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="852" width="300" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="898" width="248" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="944" width="316" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="1026" width="270" height="20" rx="10" fill="#cfc6bd"/>
+    <rect x="124" y="1072" width="320" height="20" rx="10" fill="#cfc6bd"/>
+    <text x="124" y="1150" fill="#928981" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="700">写得很完整，但不是第一眼</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="518" y="548" width="474" height="650" rx="40" fill="#1f1f1f"/>
+    <rect x="558" y="592" width="170" height="58" rx="29" fill="#e83f4f"/>
+    <text x="643" y="632" text-anchor="middle" fill="#fffaf3" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="29" font-weight="850">第一屏</text>
+    <text x="560" y="760" fill="#fffaf3" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="86" font-weight="900">先把</text>
+    <text x="560" y="872" fill="#fffaf3" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="116" font-weight="900">封面</text>
+    <text x="560" y="986" fill="#fffaf3" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="86" font-weight="900">做对</text>
+    <path d="M846 678 L880 746 L954 756 L900 806 L914 879 L846 844 L778 879 L792 806 L738 756 L812 746 Z" fill="#f7d24a"/>
+    <text x="560" y="1102" fill="#f7f4ef" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="700">1 秒说清：为什么要点进来</text>
+  </g>
+
+  <path d="M86 1266 H994" stroke="#29241f" stroke-width="3" stroke-linecap="round"/>
+  <text class="ink subtitle" x="86" y="1340">文案和封面，分开做</text>
+  <text class="mono" x="680" y="1340" font-size="23" font-weight="750">social-media-skills</text>
+</svg>
+

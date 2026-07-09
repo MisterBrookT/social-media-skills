@@ -68,3 +68,7 @@ skills/
 - 封面会倒逼一句话定位，比先写长文更清楚。
 
 Case 见 `skills/social-media-xiaohongshu-cover/SKILL.md`。
+
+## 案例
+
+- `cases/xiaohongshu-launch/`：`social-media-skills` 小红书发布案例，分 `copy/` 和 `cover/` 两条分支。
