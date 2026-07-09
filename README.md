@@ -16,22 +16,30 @@
 
 ## 案例
 
-### Kaji 小红书产品封面
+### 小红书产品封面
 
-产品类封面。真实截图证明产品形态，标题说清产品定位，底部卖点补充可验证信息。
+隔离 Codex 使用本仓库 `xiaohongshu` skill 生成。每个 case 保留轻 prompt、输出图、SVG 源文件和测试记录。
 
-<p>
-  <img src="cases/kaji-launch/cover/cover-d-clean-product.png" width="360" alt="Kaji 小红书产品封面" />
-  <br />
-  <small>产品类封面：品牌名 + 一句话定位 + 真实截图 + 三个短卖点。</small>
-</p>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="cases/xiaohongshu-cover/product-kaji/output.png" width="320" alt="Kaji 小红书产品封面" />
+      <br />
+      <sub>Kaji：真实截图证明产品形态，品牌名和定位优先。</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="cases/xiaohongshu-cover/product-social-media-skills/output.png" width="320" alt="social-media-skills 小红书产品封面" />
+      <br />
+      <sub>social-media-skills：一个主题生成三平台内容包。</sub>
+    </td>
+  </tr>
+</table>
 
-- 成品：[cover-d-clean-product.png](cases/kaji-launch/cover/cover-d-clean-product.png)
-- 源文件：[cover-d-clean-product.svg](cases/kaji-launch/cover/cover-d-clean-product.svg)
-- 文案：[xiaohongshu-copy.md](cases/kaji-launch/copy/xiaohongshu-copy.md)
+- Kaji：[prompt](cases/xiaohongshu-cover/product-kaji/prompt.md) · [output.png](cases/xiaohongshu-cover/product-kaji/output.png) · [notes](cases/xiaohongshu-cover/product-kaji/notes.md)
+- social-media-skills：[prompt](cases/xiaohongshu-cover/product-social-media-skills/prompt.md) · [output.png](cases/xiaohongshu-cover/product-social-media-skills/output.png) · [notes](cases/xiaohongshu-cover/product-social-media-skills/notes.md)
 - 规则：[xiaohongshu/references/cover.md](skills/xiaohongshu/references/cover.md)
 
-后续不同平台、不同内容类型的案例继续放进 `cases/`。案例目录只保留可展示资产；路线、判断、复盘沉淀到 Obsidian 项目知识库。
+后续案例按能力分类放进 `cases/`。案例目录保留 prompt、输出、源文件和测试记录；路线、判断、复盘沉淀到 Obsidian 项目知识库。
 
 ## 为什么
 
@@ -91,8 +99,17 @@ skills/
     SKILL.md
 
 cases/
-  kaji-launch/
-  xiaohongshu-launch/
+  xiaohongshu-cover/
+    product-kaji/
+      prompt.md
+      output.png
+      output.svg
+      notes.md
+    product-social-media-skills/
+      prompt.md
+      output.png
+      output.svg
+      notes.md
 
 docs/
   repo-structure.md

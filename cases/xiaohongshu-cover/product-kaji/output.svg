@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <style>
+      .bg { fill: #f7f8f4; }
+      .ink { fill: #141815; }
+      .muted { fill: #667069; }
+      .accent { fill: #3f6f87; }
+      .green { fill: #18a36f; }
+      .panel { fill: #ffffff; stroke: #d7ddd7; stroke-width: 2; }
+      .line { stroke: #cbd3cd; stroke-width: 2; }
+      text { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
+    </style>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#111513" flood-opacity="0.14"/>
+    </filter>
+    <clipPath id="shotClip">
+      <rect x="132" y="560" width="816" height="740" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <rect class="bg" width="1080" height="1440"/>
+
+  <text x="82" y="150" class="ink" font-size="88" font-weight="950">Kaji</text>
+  <text x="278" y="150" class="accent" font-size="32" font-weight="850">macOS 菜单栏工具</text>
+
+  <text x="82" y="295" class="ink" font-size="101" font-weight="950">AI Coding</text>
+  <text x="82" y="412" class="accent" font-size="94" font-weight="950">一站式状态栏</text>
+
+  <rect x="82" y="468" width="558" height="66" rx="33" fill="#ffffff" stroke="#c8d0ca" stroke-width="2"/>
+  <text x="361" y="511" class="ink" font-size="31" font-weight="800" text-anchor="middle">用量 / 成本 / 压力 一眼看住</text>
+  <circle cx="710" cy="501" r="9" class="green"/>
+  <text x="736" y="512" class="muted" font-size="31" font-weight="800">长任务少打断</text>
+  <path d="M737 536 C 802 551, 890 549, 980 528" stroke="#3f6f87" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="132" y="560" width="816" height="740" rx="34" fill="#ffffff"/>
+    <image href="assets/kaji-gauge-current.png" x="160" y="575" width="760" height="720" preserveAspectRatio="xMidYMid meet" clip-path="url(#shotClip)"/>
+  </g>
+
+  <g transform="translate(82 1362)">
+    <text x="0" y="0" class="ink" font-size="30" font-weight="880">额度可见</text>
+    <text x="0" y="39" class="muted" font-size="23" font-weight="720">5h / 7d 不盲跑</text>
+  </g>
+
+  <line x1="358" y1="1328" x2="358" y2="1410" class="line"/>
+
+  <g transform="translate(422 1362)">
+    <text x="0" y="0" class="ink" font-size="30" font-weight="880">状态收束</text>
+    <text x="0" y="39" class="muted" font-size="23" font-weight="720">多模型一屏看</text>
+  </g>
+
+  <line x1="716" y1="1328" x2="716" y2="1410" class="line"/>
+
+  <g transform="translate(780 1362)">
+    <text x="0" y="0" class="ink" font-size="30" font-weight="880">少打断</text>
+    <text x="0" y="39" class="muted" font-size="23" font-weight="720">长任务更稳</text>
+  </g>
+</svg>

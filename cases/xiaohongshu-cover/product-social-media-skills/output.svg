@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <style>
+      .bg { fill: #111417; }
+      .grid { stroke: #2a2f33; stroke-width: 1; opacity: 0.35; }
+      .paper { fill: #f4efe6; }
+      .paper2 { fill: #ebe3d6; }
+      .ink { fill: #111417; }
+      .soft { fill: #5e6767; }
+      .muted { fill: #aeb7b3; }
+      .line { stroke: #d1c7b8; stroke-width: 2; }
+      .red { fill: #d6533c; }
+      .redStroke { stroke: #d6533c; stroke-width: 3; }
+      .gold { fill: #d8a84b; }
+      .green { fill: #66b59e; }
+      .blue { fill: #6fa8d8; }
+      .darkPanel { fill: #1a1e21; }
+      .card { fill: #f4efe6; stroke: #393f42; stroke-width: 2; }
+      .chip { fill: #23282b; stroke: #444b4f; stroke-width: 2; }
+      text { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; letter-spacing: 0; }
+      .mono { font-family: "SF Mono", "JetBrains Mono", Menlo, monospace; }
+    </style>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="dotGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" class="grid"/>
+    </pattern>
+  </defs>
+
+  <rect class="bg" width="1080" height="1440"/>
+  <rect width="1080" height="1440" fill="url(#dotGrid)"/>
+
+  <g transform="translate(68 64)">
+    <text x="0" y="40" class="muted mono" font-size="34" font-weight="850">social-media-skills</text>
+    <rect x="704" y="0" width="240" height="56" rx="18" class="chip"/>
+    <circle cx="738" cy="28" r="7" class="red"/>
+    <circle cx="762" cy="28" r="7" class="gold"/>
+    <circle cx="786" cy="28" r="7" class="green"/>
+    <text x="864" y="37" class="paper" text-anchor="middle" font-size="22" font-weight="760">content system</text>
+  </g>
+
+  <g transform="translate(68 174)">
+    <text x="0" y="82" class="paper" font-size="80" font-weight="950">一个主题</text>
+    <text x="0" y="178" class="paper" font-size="80" font-weight="950">生成三平台内容包</text>
+    <rect x="0" y="224" width="944" height="88" rx="24" fill="#1a1f22" stroke="#3a4145" stroke-width="2"/>
+    <text x="32" y="278" class="muted" font-size="28" font-weight="760">输入主题</text>
+    <text x="162" y="278" class="paper" font-size="30" font-weight="850">开源工具发布：从一个想法到可发布内容</text>
+    <rect x="794" y="244" width="118" height="48" rx="16" class="red"/>
+    <text x="853" y="276" fill="#fff8f0" text-anchor="middle" font-size="22" font-weight="850">生成</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="66" y="590" width="288" height="590" rx="24" class="card"/>
+    <rect x="396" y="590" width="288" height="590" rx="24" class="card"/>
+    <rect x="726" y="590" width="288" height="590" rx="24" class="card"/>
+  </g>
+
+  <g transform="translate(66 590)">
+    <rect x="0" y="0" width="288" height="590" rx="24" fill="none"/>
+    <g transform="translate(28 28)">
+      <rect x="0" y="0" width="100" height="38" rx="13" class="red"/>
+      <text x="50" y="26" fill="#fff8f0" text-anchor="middle" font-size="20" font-weight="850">小红书</text>
+      <text x="0" y="76" class="ink" font-size="28" font-weight="900">封面 + 笔记</text>
+      <text x="0" y="108" class="soft" font-size="19" font-weight="720">先定点击承诺</text>
+
+      <rect x="0" y="138" width="232" height="310" rx="18" fill="#15181b"/>
+      <rect x="18" y="156" width="196" height="274" rx="14" fill="#fff7ee"/>
+      <text x="36" y="202" class="red" font-size="24" font-weight="950">别先写正文</text>
+      <text x="36" y="238" class="ink" font-size="23" font-weight="900">先做封面</text>
+      <rect x="36" y="270" width="140" height="12" rx="6" class="red"/>
+      <rect x="36" y="296" width="112" height="10" rx="5" fill="#d1c7b8"/>
+      <rect x="36" y="324" width="124" height="52" rx="12" fill="#efe3d4"/>
+      <text x="54" y="357" class="ink" font-size="17" font-weight="820">痛点 / 结果 / 证据</text>
+      <rect x="36" y="390" width="70" height="20" rx="10" fill="#f0c7bc"/>
+      <rect x="116" y="390" width="58" height="20" rx="10" fill="#d8e9df"/>
+    </g>
+    <g transform="translate(28 486)">
+      <rect x="0" y="0" width="232" height="48" rx="14" class="paper2"/>
+      <text x="20" y="31" class="ink" font-size="20" font-weight="850">标题、正文、标签同步成形</text>
+    </g>
+  </g>
+
+  <g transform="translate(396 590)">
+    <rect x="0" y="0" width="288" height="590" rx="24" fill="none"/>
+    <g transform="translate(28 28)">
+      <rect x="0" y="0" width="100" height="38" rx="13" fill="#15181b"/>
+      <text x="50" y="26" fill="#fff8f0" text-anchor="middle" font-size="20" font-weight="850">抖音</text>
+      <text x="0" y="76" class="ink" font-size="28" font-weight="900">口播 + 分镜</text>
+      <text x="0" y="108" class="soft" font-size="19" font-weight="720">竖屏视频节奏</text>
+
+      <rect x="48" y="134" width="136" height="274" rx="26" fill="#0b0d0f"/>
+      <rect x="56" y="144" width="120" height="254" rx="20" fill="#202429"/>
+      <rect x="72" y="166" width="88" height="52" rx="14" fill="#66b59e"/>
+      <text x="116" y="199" fill="#0b0d0f" text-anchor="middle" font-size="18" font-weight="950">3 秒开场</text>
+      <rect x="72" y="238" width="88" height="74" rx="16" fill="#111417" stroke="#5d686a" stroke-width="2"/>
+      <path d="M106 257 L106 292 L136 274 Z" fill="#f4efe6"/>
+      <rect x="66" y="330" width="100" height="34" rx="12" fill="#f4efe6"/>
+      <text x="116" y="353" class="ink" text-anchor="middle" font-size="15" font-weight="850">把主题说成画面</text>
+      <rect x="72" y="380" width="88" height="5" rx="3" fill="#5a6265"/>
+      <rect x="72" y="380" width="42" height="5" rx="3" class="green"/>
+    </g>
+    <g transform="translate(28 446)">
+      <rect x="0" y="0" width="232" height="34" rx="12" class="paper2"/>
+      <text x="18" y="24" class="ink" font-size="18" font-weight="850">01 痛点开场</text>
+      <rect x="0" y="48" width="232" height="34" rx="12" class="paper2"/>
+      <text x="18" y="72" class="ink" font-size="18" font-weight="850">02 展示过程</text>
+      <rect x="0" y="96" width="232" height="34" rx="12" class="paper2"/>
+      <text x="18" y="120" class="ink" font-size="18" font-weight="850">03 收束结果</text>
+    </g>
+  </g>
+
+  <g transform="translate(726 590)">
+    <rect x="0" y="0" width="288" height="590" rx="24" fill="none"/>
+    <g transform="translate(28 28)">
+      <rect x="0" y="0" width="100" height="38" rx="13" class="green"/>
+      <text x="50" y="26" fill="#0b0d0f" text-anchor="middle" font-size="20" font-weight="900">公众号</text>
+      <text x="0" y="76" class="ink" font-size="28" font-weight="900">标题 + 长文</text>
+      <text x="0" y="108" class="soft" font-size="19" font-weight="720">结构先行，留足安全区</text>
+
+      <rect x="0" y="138" width="232" height="62" rx="16" class="paper2"/>
+      <text x="22" y="176" class="ink" font-size="20" font-weight="850">一个主题怎么拆三端</text>
+      <rect x="0" y="216" width="232" height="62" rx="16" fill="#fff7ee" stroke="#d1c7b8" stroke-width="2"/>
+      <text x="22" y="254" class="ink" font-size="20" font-weight="850">三端各有表达</text>
+
+      <line x1="0" y1="316" x2="232" y2="316" class="line"/>
+      <text x="0" y="360" class="ink" font-size="24" font-weight="900">长文结构</text>
+      <path d="M12 392 L12 492" fill="none" class="redStroke" opacity="0.5"/>
+      <circle cx="12" cy="392" r="7" class="red"/>
+      <text x="34" y="400" class="soft" font-size="19" font-weight="760">读者场景</text>
+      <circle cx="12" cy="442" r="7" class="gold"/>
+      <text x="34" y="450" class="soft" font-size="19" font-weight="760">方法展开</text>
+      <circle cx="12" cy="492" r="7" class="green"/>
+      <text x="34" y="500" class="soft" font-size="19" font-weight="760">发布检查</text>
+    </g>
+  </g>
+
+  <g transform="translate(68 1242)">
+    <rect x="0" y="0" width="944" height="114" rx="26" fill="#1a1f22" stroke="#3a4145" stroke-width="2"/>
+    <text x="34" y="45" class="paper" font-size="29" font-weight="900">同一系统，三种平台语义</text>
+    <text x="34" y="82" class="muted" font-size="23" font-weight="720">封面、竖屏脚本、长文结构等权预览；内容细节表达平台差异。</text>
+    <rect x="770" y="32" width="134" height="50" rx="17" class="paper"/>
+    <text x="837" y="65" class="ink" text-anchor="middle" font-size="21" font-weight="900">ready</text>
+  </g>
+</svg>

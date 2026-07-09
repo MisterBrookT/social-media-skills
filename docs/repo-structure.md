@@ -16,9 +16,17 @@ skills/
   wechat/
 
 cases/
-  xiaohongshu-launch/
-    copy/
-    cover/
+  xiaohongshu-cover/
+    product-kaji/
+      prompt.md
+      output.png
+      output.svg
+      notes.md
+    product-social-media-skills/
+      prompt.md
+      output.png
+      output.svg
+      notes.md
 
 docs/
   repo-structure.md
@@ -33,21 +41,21 @@ docs/
 - 平台是顶层 skill，目录名直接用平台名，不统一加仓库前缀。
 - 不设总入口 skill；跨平台路线放 README/docs，避免 `skills/` 出现抽象目录。
 - 同平台子能力放该平台目录里的 `references/`。
-- `cases/`：只放成品或半成品资产，方便作为证明材料。
+- `cases/`：按能力分类放测试案例，保留 prompt、输出、源文件、测试记录。
 - `docs/`：放仓库结构、开发流程、参考资料；不放单独 case 复盘。
 - 案例路线、判断、复盘沉到 Obsidian `02 Projects/social-media-skills/`。
 - 不把“为什么这么做”的长说明塞进 case 资产目录。
 
 ## 当前案例
 
-`cases/xiaohongshu-launch/` 是第一个证明案例：
+`cases/xiaohongshu-cover/` 是小红书封面能力测试集：
 
-- `copy/xiaohongshu-copy.md`：两版小红书文案。
-- `cover/*.svg`：封面源文件。
-- `cover/*.png`：封面导出图。
+- `product-kaji/`：产品封面，真实截图做主体证据。
+- `product-social-media-skills/`：无传统 UI 的 skill library 产品封面，展示真实产出状态。
 
-`cases/kaji-launch/` 是第二个证明案例：
+每个 case 统一保留：
 
-- `copy/xiaohongshu-copy.md`：两版小红书文案。
-- `cover/*.svg`：封面源文件。
-- `cover/*.png`：封面导出图。
+- `prompt.md`：真实用户会说的轻 prompt。
+- `output.svg`：可复现源文件。
+- `output.png`：导出成品图。
+- `notes.md`：隔离测试记录、读过的 skill、规则反馈。
