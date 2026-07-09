@@ -88,5 +88,6 @@
 - 管线：借 `content-pipeline`。
 - 公众号证据池：借 `yuan-skills`。
 - 个人风格与审校：借 `auto-claude-writing-agent-pub`。
+- 仓库结构：借 `superpowers`，`skills/` 下平铺多个可组合 skill，`social-media` 只做总入口。
 
 首版边界：生成内容资产，不自动发布。

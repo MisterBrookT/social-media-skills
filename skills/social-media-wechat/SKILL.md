@@ -1,0 +1,46 @@
+---
+name: social-media-wechat
+description: "Use when creating WeChat Official Account/公众号 long-form articles, titles, summaries, cover copy, or adapting source material into WeChat-native content."
+---
+
+# 公众号
+
+公众号内容 skill。重点是信任、论证、收藏、转发。
+
+## 内容单元
+
+- 标题：15-30 字；可信息密度高，不靠空泛震惊。
+- 摘要：40-80 字，交代读者收益。
+- 正文：1200-3000 字常用。
+- 封面：21:9 主封面 + 1:1 分享图。
+- 结尾：观点收束 + 自然互动。
+
+## 结构
+
+1. 开头：冲突、场景、反常识、问题。
+2. 论证：2-4 个论点，每点有证据或例子。
+3. 反对意见：回答读者可能的疑问。
+4. 方法：给可执行路径。
+5. 结尾：一句可记住的判断。
+
+## 写法
+
+- 证据优先；事实变化快时先查证。
+- 段落短，适配手机阅读。
+- 标题承诺必须在正文兑现。
+- 不伪造访谈、调研、用户反馈。
+
+## 输出
+
+```markdown
+## 标题组
+
+## 摘要
+
+## 正文
+
+## 封面文案
+
+## 互动引导
+```
+

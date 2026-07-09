@@ -1,0 +1,44 @@
+{
+  "name": "social-media-skills",
+  "version": "0.1.0",
+  "description": "Chinese social media skills for WeChat, Xiaohongshu, and Douyin content assets.",
+  "author": {
+    "name": "Yinghao Tang",
+    "url": "https://github.com/MisterBrookT"
+  },
+  "homepage": "https://github.com/MisterBrookT/social-media-skills",
+  "repository": "https://github.com/MisterBrookT/social-media-skills",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "xiaohongshu",
+    "douyin",
+    "wechat",
+    "content",
+    "cover",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Social Media Skills",
+    "shortDescription": "中文社媒内容、封面、图文卡片技能集",
+    "longDescription": "用于公众号、小红书、抖音内容资产生产：选题、文案、封面、图文卡片、跨平台转译。",
+    "developerName": "Yinghao Tang",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "帮我把这个主题做成小红书内容包。",
+      "帮我给这个开源工具做一张小红书封面。"
+    ],
+    "websiteURL": "https://github.com/MisterBrookT/social-media-skills",
+    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "brandColor": "#E11D48",
+    "screenshots": []
+  }
+}
+
