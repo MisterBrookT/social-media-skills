@@ -1,11 +1,11 @@
 ---
 name: social-media-xiaohongshu
-description: "Use when creating Xiaohongshu/小红书 notes, titles, tags, carousel outlines, posting copy, or adapting source material into RedNote-native content."
+description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cover big text, tags, carousel outlines, posting copy, or adapting source material into RedNote-native content."
 ---
 
 # 小红书
 
-小红书平台内容 skill。封面专项用 `xiaohongshu-cover`。
+小红书平台内容 skill。覆盖正文、标题、封面、图文页纲；cover 是平台内子能力，不是同层 skill。
 
 ## 核心原则
 
@@ -13,6 +13,7 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, tags, carou
 - 像真实使用后分享，不像产品发布稿。
 - 标签服务发现，不堆无关热词。
 - 不写无法证明的“全网最强”“爆款必备”。
+- 做开源工具/产品封面前，先读 `references/cover.md`；需要种子先例时再读 `references/cover-seed-research.md`。
 
 ## 内容单元
 
@@ -32,6 +33,26 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, tags, carou
 6. 用法：怎么开始。
 7. 收尾：适合谁 + 评论钩子。
 
+## 封面
+
+先做封面，再写正文。封面只解决一个问题：用户为什么要点。
+
+常用公式：
+
+- 痛点型：`还在手搓 X？`
+- 结果型：`我把 X 变成了 Y`
+- 对比型：`以前 X / 现在 Y`
+- 清单型：`3 个步骤做出 X`
+- 反常识型：`别先写正文，先做封面`
+
+视觉默认：
+
+- 规格：1080 × 1440，3:4。
+- 主标题 3-10 字，手机信息流可读。
+- 最多三层信息：主标题、副标题、角标。
+- 工具类封面优先：白/浅灰底、炭黑大字、一个强调色、产品形态图。
+- 不用纯代码截图，不堆 emoji，不写未证实数字。
+
 ## 输出
 
 ```markdown
@@ -47,4 +68,3 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, tags, carou
 
 ## 评论钩子
 ```
-

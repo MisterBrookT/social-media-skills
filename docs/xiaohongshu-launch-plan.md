@@ -11,7 +11,7 @@
 
 - 小红书第一眼是封面，不是正文。
 - 封面负责 1 秒定位，文案负责解释和转化。
-- 分开做更容易沉淀成 skill：`social-media-xiaohongshu` 和 `social-media-xiaohongshu-cover` 各自有清晰边界。
+- 分开做更容易沉淀：`social-media-xiaohongshu` 负责平台，封面规则放在它的 `references/cover.md`。
 
 ## 两个版本
 

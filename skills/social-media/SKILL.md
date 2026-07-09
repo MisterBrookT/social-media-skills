@@ -24,7 +24,7 @@ description: "Use when planning Chinese social media content packages across pla
 | 抖音 | 前 3 秒钩子、口播稿、分镜点、封面标题、话题 | `../social-media-douyin/SKILL.md` |
 | 封面/图文 | 小红书 3:4、公众号 21:9+1:1、抖音 9:16 封面提示词/页面规划 | `references/visual-patterns.md` + `references/platform-specs.md` |
 | 跨平台改写 | 同一素材重写为多平台包 | `references/platform-specs.md` |
-| 小红书开源工具封面 | 封面大字、卖点、副标题、图像提示词 | `../social-media-xiaohongshu-cover/SKILL.md` |
+| 小红书开源工具封面 | 封面大字、卖点、副标题、图像提示词 | `../social-media-xiaohongshu/SKILL.md` + `../social-media-xiaohongshu/references/cover.md` |
 | 先例调研/设计依据 | 已调研仓库、可复用模式、边界 | `references/prior-art.md` |
 
 ## 工作流
