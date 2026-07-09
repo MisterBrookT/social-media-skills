@@ -12,11 +12,6 @@
 <img src="https://img.shields.io/badge/skills-xiaohongshu%20%C2%B7%20douyin%20%C2%B7%20wechat-5C86A3?labelColor=1A1A1A" alt="skills: xiaohongshu, douyin, wechat">
 <a href="LICENSE"><img src="https://img.shields.io/github/license/MisterBrookT/social-media-skills?color=5C86A3&labelColor=1A1A1A" alt="MIT license"></a>
 
-<br />
-<br />
-
-<img src="cases/kaji-launch/cover/cover-d-clean-product.png" width="520" alt="Kaji 小红书产品封面" />
-
 </div>
 
 ## 案例
@@ -24,6 +19,12 @@
 ### Kaji 小红书产品封面
 
 产品类封面。真实截图证明产品形态，标题说清产品定位，底部卖点补充可验证信息。
+
+<p>
+  <img src="cases/kaji-launch/cover/cover-d-clean-product.png" width="360" alt="Kaji 小红书产品封面" />
+  <br />
+  <small>产品类封面：品牌名 + 一句话定位 + 真实截图 + 三个短卖点。</small>
+</p>
 
 - 成品：[cover-d-clean-product.png](cases/kaji-launch/cover/cover-d-clean-product.png)
 - 源文件：[cover-d-clean-product.svg](cases/kaji-launch/cover/cover-d-clean-product.svg)
