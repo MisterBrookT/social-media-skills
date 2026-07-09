@@ -13,6 +13,10 @@ description: "Use when creating, editing, or critiquing Xiaohongshu/小红书 3:
 - 开源工具需要一句话定位，封面会逼出核心卖点。
 - 封面可复用到图文第 1 页、仓库社媒预览、抖音封面。
 
+## 参考
+
+做 `social-media-skills` 或开源工具封面前，先读 `references/seed-research.md`。里面有 prior art、小红书真实搜索信号、taste 规则和 5 个 seed。
+
 ## 输入
 
 - 工具名。
@@ -88,4 +92,3 @@ description: "Use when creating, editing, or critiquing Xiaohongshu/小红书 3:
 
 #开源项目 #AI工具 #小红书封面 #内容创作 #社媒运营 #Codex #AgentSkills
 ```
-
