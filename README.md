@@ -1,8 +1,38 @@
+<div align="center">
+
+<img src="docs/readme-icon.svg" height="72" alt="Social Media Skills icon" />
+
 # Social Media Skills
 
-中文社交媒体内容技能集。面向小红书、抖音、公众号，帮助 Agent 生成平台原生的文案、封面、图文页纲和跨平台内容包。
+**中文社媒内容资产技能库。**
 
-## 它解决什么
+把一个主题变成小红书、抖音、公众号原生内容包：文案、封面、图文页纲、口播脚本。
+
+<a href="https://github.com/MisterBrookT/social-media-skills/stargazers"><img src="https://img.shields.io/github/stars/MisterBrookT/social-media-skills?style=flat&label=stars&labelColor=1A1A1A&color=5C86A3" alt="GitHub stars"></a>
+<img src="https://img.shields.io/badge/skills-xiaohongshu%20%C2%B7%20douyin%20%C2%B7%20wechat-5C86A3?labelColor=1A1A1A" alt="skills: xiaohongshu, douyin, wechat">
+<a href="LICENSE"><img src="https://img.shields.io/github/license/MisterBrookT/social-media-skills?color=5C86A3&labelColor=1A1A1A" alt="MIT license"></a>
+
+<br />
+<br />
+
+<img src="cases/kaji-launch/cover/cover-d-clean-product.png" width="520" alt="Kaji 小红书产品封面" />
+
+</div>
+
+## 案例
+
+### Kaji 小红书产品封面
+
+产品类封面。真实截图证明产品形态，标题说清产品定位，底部卖点补充可验证信息。
+
+- 成品：[cover-d-clean-product.png](cases/kaji-launch/cover/cover-d-clean-product.png)
+- 源文件：[cover-d-clean-product.svg](cases/kaji-launch/cover/cover-d-clean-product.svg)
+- 文案：[xiaohongshu-copy.md](cases/kaji-launch/copy/xiaohongshu-copy.md)
+- 规则：[xiaohongshu/references/cover.md](skills/xiaohongshu/references/cover.md)
+
+后续不同平台、不同内容类型的案例继续放进 `cases/`。案例目录只保留可展示资产；路线、判断、复盘沉淀到 Obsidian 项目知识库。
+
+## 为什么
 
 很多 Agent 会把不同平台写成同一篇短文：公众号像小红书，小红书像产品公告，抖音口播像书面稿。
 
@@ -39,21 +69,13 @@ cd social-media-skills
 
 产品类封面必须优先使用真实截图。截图是证据，不是装饰。
 
-## 案例展示
+## 工作方式
 
-### Kaji 小红书产品封面
+```text
+素材输入 -> 平台判断 -> 内容资产 -> 案例验证 -> 规则回写
+```
 
-产品类封面。重点验证：品牌名可见、真实截图作证、主标题是产品定位、底部卖点短且平行。
-
-<p>
-  <img src="cases/kaji-launch/cover/cover-d-clean-product.png" alt="Kaji 小红书产品封面" width="360">
-</p>
-
-- 文案：[cases/kaji-launch/copy/xiaohongshu-copy.md](cases/kaji-launch/copy/xiaohongshu-copy.md)
-- 封面源文件：[cases/kaji-launch/cover/cover-d-clean-product.svg](cases/kaji-launch/cover/cover-d-clean-product.svg)
-- 封面规则：[skills/xiaohongshu/references/cover.md](skills/xiaohongshu/references/cover.md)
-
-更多案例会继续放到 `cases/`。每个案例只保留可展示资产；路线、判断、复盘沉淀到 Obsidian 项目知识库。
+每个真实案例至少反哺一条规则。满意样例写回 `skills/`，过程复盘放到项目知识库。
 
 ## 仓库结构
 
@@ -76,16 +98,6 @@ docs/
   dogfooding-workflow.md
   references/
 ```
-
-结构参考 `superpowers`：顶层 skill 平铺；同平台子能力放在该平台目录的 `references/`。
-
-## 开发循环
-
-1. 用当前技能做一个真实案例。
-2. 把成品资产放进 `cases/<project>-launch/`。
-3. 把复盘沉淀到 Obsidian 项目知识库。
-4. 抽取可复用规则，写回 `skills/*/SKILL.md` 或 `references/`。
-5. 用新版技能重做同一案例或做下一个案例。
 
 ## 边界
 
