@@ -1,6 +1,6 @@
 ---
 name: xiaohongshu
-description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cover big text, tags, carousel outlines, posting copy, or adapting source material into RedNote-native content."
+description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, tags, carousels, or native post copy."
 ---
 
 # 小红书
@@ -15,6 +15,7 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 不写无法证明的“全网最强”“爆款必备”。
 - 做开源工具/产品封面前，先读 `references/cover.md`。
 - 做产品封面时，优先使用真实截图。没有截图，先向用户要，不要用伪面板替代。
+- 招募、系列预告、活动详情长图、活动回顾首图时读 `references/covers/event.md`。
 
 ## 输入 contract
 
@@ -64,6 +65,7 @@ description: "Use when creating Xiaohongshu/小红书 notes, titles, covers, cov
 - 方法封面：教程、流程、经验。重点是步骤感和收藏感。
 - 观点封面：判断、反常识、痛点。重点是冲突和态度。
 - 资料封面：合集、清单、模板。重点是范围和可复用。
+- 活动海报：招募、预告、详情长图、回顾。先定活动价值和下一步动作。
 
 产品封面不要用纯大字或伪 UI 硬撑。真实截图是证据，标题负责说清定位。
 

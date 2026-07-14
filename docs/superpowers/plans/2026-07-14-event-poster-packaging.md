@@ -78,7 +78,7 @@ Add `活动海报` row to `references/cover.md`; add activity request read condi
 test -f skills/xiaohongshu/references/covers/event.md
 rg -n 'covers/event\.md' skills/xiaohongshu/SKILL.md skills/xiaohongshu/references/cover.md
 ! rg -n '立自π|MBTI|紫人|绿人|喜茶|Claude 式|Obsidian 式' skills/xiaohongshu/references/covers/event.md
-/Users/tangyinghao/.agents/skills/skill2-package/scripts/run -- lint skills --json
+$SKILL2_PACKAGE_RUN -- lint skills --json
 ```
 
 Expected: route found twice; brand scan empty; lint has zero issues.
@@ -106,7 +106,7 @@ Do not stage pre-existing hunks in `SKILL.md` or `cover.md`.
 - [ ] **Step 1: Run failing package preflight**
 
 ```bash
-/Users/tangyinghao/.agents/skills/skill2-package/scripts/run -- package-check . --json
+$SKILL2_PACKAGE_RUN -- package-check . --json
 ```
 
 Expected: errors for missing `CHANGELOG.md` and `install.sh`.
@@ -284,9 +284,9 @@ git commit -m "build: add reproducible package artifact"
 - [ ] **Step 1: Run validators**
 
 ```bash
-/Users/tangyinghao/.agents/skills/skill2-package/scripts/run -- lint skills --json
-/Users/tangyinghao/.agents/skills/skill2-package/scripts/run -- package-check . --json
-/Users/tangyinghao/.agents/skills/skill2-publish/scripts/run -- publish-check . --json
+$SKILL2_PACKAGE_RUN -- lint skills --json
+$SKILL2_PACKAGE_RUN -- package-check . --json
+$SKILL2_PUBLISH_RUN -- publish-check . --json
 ```
 
 Expected: lint and package check have zero issues. Publish check may report only dirty working tree if preserved user changes remain.
@@ -311,7 +311,7 @@ tmp="$(mktemp -d)"
 mkdir -p "$tmp/project"
 cd "$tmp/project"
 DISABLE_TELEMETRY=1 CI=1 npm_config_cache="$cache" npm exec --offline --yes --package=skills@1.5.17 -- \
-  skills add /Users/tangyinghao/workspace/media/social-media-skills \
+  skills add "$REPO" \
   --skill xiaohongshu --agent codex --copy --yes
 test -f "$tmp/project/.agents/skills/xiaohongshu/SKILL.md"
 test -f "$tmp/project/.agents/skills/xiaohongshu/references/covers/event.md"

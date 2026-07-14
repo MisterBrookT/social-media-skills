@@ -1,6 +1,6 @@
 ---
 name: douyin
-description: "Use when creating Douyin/抖音 hooks, spoken scripts, short-video outlines, cover titles, scene beats, or adapting source material into Douyin-native content."
+description: "Use when creating Douyin/抖音 hooks, scripts, outlines, cover titles, scene beats, or native video copy."
 ---
 
 # 抖音

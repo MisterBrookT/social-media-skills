@@ -1,6 +1,6 @@
 ---
 name: wechat
-description: "Use when creating WeChat Official Account/公众号 long-form articles, titles, summaries, cover copy, or adapting source material into WeChat-native content."
+description: "Use when creating WeChat Official Account/公众号 articles, titles, summaries, cover copy, or native post copy."
 ---
 
 # 公众号
