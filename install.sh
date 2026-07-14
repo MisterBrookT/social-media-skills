@@ -43,7 +43,7 @@ has_conflict=false
 for destination in "${destinations[@]}"; do
   for source in "${skill_sources[@]}"; do
     installed="$destination/${source##*/}"
-    [[ ! -e "$installed" ]] && continue
+    [[ ! -L "$installed" && ! -e "$installed" ]] && continue
     if [[ ! -d "$installed" ]] || ! diff -qr "$source" "$installed" >/dev/null; then
       printf 'conflict: %s differs from %s\n' "$installed" "$source" >&2
       has_conflict=true
@@ -61,7 +61,7 @@ for destination in "${destinations[@]}"; do
   fi
   for source in "${skill_sources[@]}"; do
     installed="$destination/${source##*/}"
-    if [[ -e "$installed" ]]; then
+    if [[ -L "$installed" || -e "$installed" ]]; then
       printf 'skip %s\n' "$installed"
     else
       printf 'copy %s -> %s\n' "$source" "$installed"
