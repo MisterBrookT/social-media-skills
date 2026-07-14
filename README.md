@@ -4,9 +4,11 @@
 
 # Social Media Skills
 
-**中文社媒内容资产技能库。**
+**Reusable skills for Chinese social-media content.**
 
-把一个主题变成小红书、抖音、公众号原生内容包：文案、封面、图文页纲、口播脚本。
+Turn one topic into platform-native Xiaohongshu, Douyin, and WeChat assets: copy, covers, event posters, carousels, and spoken scripts.
+
+Current version: `0.2.0`
 
 <a href="https://github.com/MisterBrookT/social-media-skills/stargazers"><img src="https://img.shields.io/github/stars/MisterBrookT/social-media-skills?style=flat&label=stars&labelColor=1A1A1A&color=5C86A3" alt="GitHub stars"></a>
 <img src="https://img.shields.io/badge/skills-xiaohongshu%20%C2%B7%20douyin%20%C2%B7%20wechat-5C86A3?labelColor=1A1A1A" alt="skills: xiaohongshu, douyin, wechat">
@@ -14,42 +16,25 @@
 
 </div>
 
-## 案例
+[中文](README.zh.md)
 
-### 小红书产品封面
+## Why
 
-隔离 Codex 使用本仓库 `xiaohongshu` skill 生成。每个 case 保留轻 prompt、输出图、SVG 源文件和测试记录。
+Generic agents often flatten every platform into the same short post. This library keeps platform behavior separate, then produces assets native to each channel.
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="cases/xiaohongshu-cover/product-kaji/output.png" width="320" alt="Kaji 小红书产品封面" />
-      <br />
-      <sub>Kaji：真实截图证明产品形态，品牌名和定位优先。</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="cases/xiaohongshu-cover/product-social-media-skills/output.png" width="320" alt="social-media-skills 小红书产品封面" />
-      <br />
-      <sub>social-media-skills：一个主题生成三平台内容包。</sub>
-    </td>
-  </tr>
-</table>
+## Shipped skills
 
-- Kaji：[prompt](cases/xiaohongshu-cover/product-kaji/prompt.md) · [output.png](cases/xiaohongshu-cover/product-kaji/output.png) · [notes](cases/xiaohongshu-cover/product-kaji/notes.md)
-- social-media-skills：[prompt](cases/xiaohongshu-cover/product-social-media-skills/prompt.md) · [output.png](cases/xiaohongshu-cover/product-social-media-skills/output.png) · [notes](cases/xiaohongshu-cover/product-social-media-skills/notes.md)
-- 规则：[xiaohongshu/references/cover.md](skills/xiaohongshu/references/cover.md)
+| Skill | Use it for | Outputs |
+| --- | --- | --- |
+| `xiaohongshu` | Notes, event posters, product launches, covers, carousels | Titles, poster hierarchy, cover copy, body copy, tags, carousel outline, comment hook |
+| `douyin` | Short videos, spoken scripts, cover titles | Three-second hook, spoken script, visual beats, topics |
+| `wechat` | Long-form articles, opinion posts, product explanations | Title set, summary, article, cover copy, interaction prompt |
 
-后续案例按能力分类放进 `cases/`。案例目录保留 prompt、输出、源文件和测试记录；路线、判断、复盘沉淀到 Obsidian 项目知识库。
+No global `social-media` router is installed. Each platform remains a self-contained skill.
 
-## 为什么
+## Install
 
-很多 Agent 会把不同平台写成同一篇短文：公众号像小红书，小红书像产品公告，抖音口播像书面稿。
-
-这个仓库把平台拆成独立技能，让 Agent 先判断内容形态，再输出对应平台真正能用的资产。
-
-## 安装
-
-推荐：用 Skills CLI 安装三个 skill 到 Codex 与 Claude Code。
+Recommended: install all three skills for Codex and Claude Code with Skills CLI.
 
 ```bash
 npx skills add MisterBrookT/social-media-skills \
@@ -62,47 +47,45 @@ npx skills add MisterBrookT/social-media-skills \
   --yes
 ```
 
-只需一个平台时，保留对应 `--skill`。只需一个 Agent 时，保留对应 `--agent`。
+Keep only the required `--skill` or `--agent` flags when installing a subset.
 
-手动安装：
+Manual fallback:
 
 ```bash
 git clone https://github.com/MisterBrookT/social-media-skills.git && cd social-media-skills && ./install.sh all
 ```
 
-`./install.sh codex` 或 `./install.sh claude` 可单独安装。已有同名且内容不同的 skill 时，安装器拒绝覆盖；`./install.sh --dry-run all` 可预览。
+Use `./install.sh codex` or `./install.sh claude` for one agent. Existing skills with different content are never overwritten. Preview with `./install.sh --dry-run all`.
 
-## 当前技能
+## Xiaohongshu event posters
 
-| 技能 | 适用场景 | 主要产物 |
-| --- | --- | --- |
-| `xiaohongshu` | 小红书笔记、活动海报、产品发布、封面、图文卡片 | 标题、海报信息层级、封面大字、正文、标签、图文页纲、评论钩子 |
-| `douyin` | 抖音短视频、口播、封面标题 | 前 3 秒钩子、口播稿、画面提示、话题 |
-| `wechat` | 公众号长文、观点文、产品说明 | 标题组、摘要、正文、封面文案、互动引导 |
+`xiaohongshu` routes these requests to focused event-poster guidance:
 
-没有 `social-media` 总入口技能。仓库名已经说明这是社媒技能库；`skills/` 里只放真正可触发的平台技能。
+- Single-event recruitment
+- Series announcements
+- Event-detail long images
+- Event recap covers
 
-## 小红书封面能力
+Workflow: communication goal → four information levels → visual focus and alignment → color roles → CTA → mobile readability check.
 
-`xiaohongshu` 内置封面类型判断：
+Rules stay brand-neutral. Brand colors, logos, claims, dates, venues, prices, and registration details come from user-provided inputs; missing facts are never invented.
 
-- 产品封面：真实截图 + 品牌名 + 一句话定位。
-- 方法封面：教程、流程、经验，强调步骤感和收藏感。
-- 观点封面：判断、反常识、痛点，强调冲突。
-- 资料封面：合集、清单、模板，强调范围和复用。
-- 活动海报：招募、系列预告、详情长图、活动回顾；先定传播目标、四层信息与 CTA。
+## Compatibility
 
-产品类封面必须优先使用真实截图。截图是证据，不是装饰。
+- Agents: Codex, Claude Code
+- Preferred installer: current `npx skills add`
+- Manual installer: Bash on macOS or Linux
+- Validated locally on macOS; use Skills CLI on other environments
 
-## 工作方式
+## Privacy and limits
 
-```text
-素材输入 -> 平台判断 -> 内容资产 -> 案例验证 -> 规则回写
-```
+- No platform login or automatic publishing
+- No telemetry in skill files
+- No fabricated data, testimonials, or first-hand experience
+- No claimed marketplace or curated-registry listing
+- Skills run with the permissions granted to the host agent; review before use
 
-每个真实案例至少反哺一条规则。满意样例写回 `skills/`，过程复盘放到项目知识库。
-
-## 仓库结构
+## Repository structure
 
 ```text
 skills/
@@ -115,32 +98,9 @@ skills/
     SKILL.md
 
 cases/
-  xiaohongshu-cover/
-    product-kaji/
-      prompt.md
-      output.png
-      output.svg
-      notes.md
-    product-social-media-skills/
-      prompt.md
-      output.png
-      output.svg
-      notes.md
-
 docs/
-  repo-structure.md
-  dogfooding-workflow.md
-  references/
 ```
 
-## 边界
-
-- 不自动登录平台。
-- 不自动发布内容。
-- skill 文件不采集遥测。
-- 不伪造数据、用户反馈、真实体验。
-- 不把跨平台内容写成同一篇短文。
-
-## 许可证
+## License
 
 MIT

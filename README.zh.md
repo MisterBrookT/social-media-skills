@@ -8,11 +8,15 @@
 
 把一个主题变成小红书、抖音、公众号原生内容包：文案、封面、图文页纲、口播脚本。
 
+当前版本：`0.2.0`
+
 <a href="https://github.com/MisterBrookT/social-media-skills/stargazers"><img src="https://img.shields.io/github/stars/MisterBrookT/social-media-skills?style=flat&label=stars&labelColor=1A1A1A&color=5C86A3" alt="GitHub stars"></a>
 <img src="https://img.shields.io/badge/skills-xiaohongshu%20%C2%B7%20douyin%20%C2%B7%20wechat-5C86A3?labelColor=1A1A1A" alt="skills: xiaohongshu, douyin, wechat">
 <a href="LICENSE"><img src="https://img.shields.io/github/license/MisterBrookT/social-media-skills?color=5C86A3&labelColor=1A1A1A" alt="MIT license"></a>
 
 </div>
+
+[English](README.md)
 
 ## 案例
 
@@ -140,6 +144,13 @@ docs/
 - skill 文件不采集遥测。
 - 不伪造数据、用户反馈、真实体验。
 - 不把跨平台内容写成同一篇短文。
+
+## 兼容性
+
+- Agent：Codex、Claude Code。
+- 推荐安装器：当前 `npx skills add`。
+- 手动安装器：macOS / Linux Bash。
+- 已在 macOS 本地验证；其他环境优先使用 Skills CLI。
 
 ## 许可证
 
